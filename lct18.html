@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;box-sizing: border-box;
+        }
+        .bg{
+            background-color: aqua;
+            padding: 12px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .header{
+            background-color: black;
+            color: aliceblue;
+            padding: 40px;
+            text-align: center;
+            font-size: large;
+        }
+        .navbar{
+            display: flex;
+            background-color: blueviolet;
+        }
+        .navbar a{
+            color: aliceblue;
+            text-decoration: none;
+            padding: 12px 16px;
+            text-align: center;
+        }
+        .navbar a:hover{
+            background-color: cadetblue;
+            color: brown;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .side{
+            flex: 30%;
+            background-color: cornsilk;
+            padding: 20px;
+        }
+        .main{
+            flex: 70%;
+            background-color: rgb(126, 162, 229);
+            padding: 20px;
+        }
+        .fakeing{
+            background-image: url(/img/about-5-3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            padding: 80px;
+            background-color: gray;
+        }
+        .size{
+            height: 300px;
+        }
+        .main-img{
+            height: 600px;
+        }
+        .footer{
+            background-color: black;
+            color: aliceblue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media screen and( max-width:700px) {
+            .row.navbar{
+                flex-direction: column;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <h4>Lorem ipsum dolor sit.</h4>
+    </div>
+    <div class="header">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, ipsa omnis esse ut voluptates repellat cupiditate eligendi. Aperiam quo quos praesentium, doloremque, dolorem iste, dignissimos impedit eius cupiditate explicabo obcaecati!</p>
+    </div>
+    <div class="navbar">
+        <a href="">Home</a>
+        <a href="">Home</a>
+        <a href="">Home</a>
+        <a href="">Home</a>
+        <a href="">Home</a>
+    </div>
+    <div class="row">
+        <div class="side">
+            <h2>Lorem, ipsum dolor.</h2>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+
+            <div class="fakeing">Image</div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae beatae impedit quis corrupti ut, nisi voluptatibus labore expedita repellat maiores iusto minus dolore magni porro doloremque ab eos natus odit.</p>
+            <br>
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas eos animi voluptates, ipsam amet rem libero quis ut mollitia quaerat molestias voluptatum ipsa iusto, similique porro magnam nemo praesentium accusantium.</P>
+
+            <div class="fakeing size">Images</div><br>
+            <div class="fakeing size">Images</div><br>
+            <div class="fakeing size">Images</div><br>
+        </div>
+
+        <div class="main">
+            <h2>Lorem, ipsum dolor.</h2>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <div class="fakeing main-img">Images</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A necessitatibus suscipit minus alias facere neque doloremque ducimus laborum, numquam fugit magni temporibus asperiores nostrum? Laboriosam id fugiat sed neque amet.</p>
+            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto esse dolor aspernatur nemo et optio totam ab, sunt non dicta ea amet assumenda nostrum voluptatem, rem voluptate quae! Fugit, cumque.</P>
+            <br>
+            
+
+            <h2>Lorem, ipsum dolor.</h2>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <div class="fakeing main-img">Images</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A necessitatibus suscipit minus alias facere neque doloremque ducimus laborum, numquam fugit magni temporibus asperiores nostrum? Laboriosam id fugiat sed neque amet.</p>
+            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto esse dolor aspernatur nemo et optio totam ab, sunt non dicta ea amet assumenda nostrum voluptatem, rem voluptate quae! Fugit, cumque.</P><br>
+
+
+            <!-- <h2>Lorem, ipsum dolor.</h2>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <div class="fakeing main-img">Images</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A necessitatibus suscipit minus alias facere neque doloremque ducimus laborum, numquam fugit magni temporibus asperiores nostrum? Laboriosam id fugiat sed neque amet.</p>
+            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto esse dolor aspernatur nemo et optio totam ab, sunt non dicta ea amet assumenda nostrum voluptatem, rem voluptate quae! Fugit, cumque.</P>
+            <br>
+
+
+            <h2>Lorem, ipsum dolor.</h2>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <div class="fakeing main-img">Images</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A necessitatibus suscipit minus alias facere neque doloremque ducimus laborum, numquam fugit magni temporibus asperiores nostrum? Laboriosam id fugiat sed neque amet.</p>
+            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto esse dolor aspernatur nemo et optio totam ab, sunt non dicta ea amet assumenda nostrum voluptatem, rem voluptate quae! Fugit, cumque.</P><br> -->
+        </div>
+        
+    </div>
+
+    <div class="footer">
+        <h2>footer</h2>
+        <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, maxime!</P>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abcoding</title>
+    <link rel="worksheet" href="style1.css"> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .item1{
+            grid-area: HEADER;
+        }
+        .item2{
+            grid-area: MENU;
+        }
+        .item3{
+            grid-area: MAIN;
+        }
+        .item4{
+            grid-area: RIGHT;
+        }
+        .item5{
+            grid-area: IMGTEXT;
+        }
+        .item6{
+            grid-area: TEXTIMG;
+        }
+        .item7{
+            grid-area: TEXTIMG1;
+        }
+        .item8{
+            grid-area: IMGTEXT1;
+        }
+        .item9{
+            grid-area: FOOTER;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-areas:
+            "HEADER HEADER HEADER HEADER HEADER HEADER"
+            "MENU MAIN MAIN MAIN MAIN RIGHT"
+            "IMGTEXT IMGTEXT IMGTEXT TEXTIMG TEXTIMG TEXTIMG"
+            "TEXTIMG1 TEXTIMG1 TEXTIMG1 IMGTEXT1 IMGTEXT1 IMGTEXT1"
+            "FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER";
+        }
+        .test{
+            background-color:hsla(260, 30%,40%, 0.3);
+            color: black;
+            text-align: center;
+            padding: 20px ;
+            font-size: 20px;
+        }
+        /* .item1{
+            background-image: url(/img/pexels-castorly-stock-8822068.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:100% 100%;
+            height: 400px;
+            width: 100%;
+        }
+        .item5{
+            background-image: url(/img/pexels-pixabay-326058.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            background-size: 100% 100%;
+            height: 300px;
+        }
+        .item8{
+            /* background-image: url(/img/pexels-bri-schneiter-346529.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            height: 300px; */
+        /* } */
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1 test">HEADER</div>
+        <div class="item3 test">MAIN</div>
+        <div class="item4 test">RIGHT</div>
+        <div class="item5 test">IMGTEXT</div>
+        <div class="item6 test">TEXTIMG</div>
+        <div class="item7 test">TEXTIMG1</div>
+        <div class="item8 test">IMGTEXT1</div>
+        <div class="item9 test">FOOTER</div>
+    </div>
+</body>
+</html>

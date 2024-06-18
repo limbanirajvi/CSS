@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abcoding</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: black;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-size: 25px;
+            padding: 12px;
+        }
+        section{
+            display: flex;
+        }
+        nav{
+            background-color: cadetblue;
+            padding: 20PX;
+            flex: 1;
+            height: 500px;
+        }
+        nav ul{
+            list-style-type:none;
+            padding: 0;
+        }
+        nav ul li{
+            padding: 12px;
+            text-align: center;
+            border-bottom: 2px dashed white;
+            border-radius: 15px;
+        }
+        nav ul li a{
+            text-decoration:none;
+        }
+        nav ul li a:hover{
+            color:brown;
+            text-decoration: none;
+            /* border-radius: 15px; */
+        }
+        article{
+            background-color: rgb(88, 128, 130);
+            flex: 3;
+            height: 500px;
+            overflow: auto;
+        }
+        .test h2{
+            background-color: rgb(87, 145, 126);
+            color: rgb(135, 65, 135);
+            text-align: center;
+            font-size:20px;
+            padding: 12px;
+        }
+        .test p{
+            /* background-color: bisque; */
+            padding: 5px 15px;
+            font-size: 20px;
+            height: 150px;
+            text-align: justify;
+        }
+        .test img{
+            width: 100%;
+            height: 250px;
+        }
+        #demo{
+            background-color: cadetblue;
+            padding: 11px;
+            flex: 2;
+            height: 500px;
+            overflow: auto;
+        }
+        #demo h2{
+            background-color: rgb(94, 157, 136);
+            color: rgb(105, 64, 143);
+            text-align: center;
+            font-size: 20px;
+            padding: 12px;
+        }
+        #demo p{
+            padding: 5px 15px;
+            font-size: 20px;
+            height: 200px;
+        }
+        #demo img{
+            width: 100%;
+            height: 250px;
+        }
+        .center{
+            background-color:rgb(24, 170, 170);
+            text-align: center;
+            padding: 12px;
+            font-size: 20px;
+        }
+        #gallery{
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            /* margin: 10px; */
+        }
+        #gallery img {
+            width: 380px;
+            margin:5px;
+            border: 1px solid red;
+        }
+        #galley img:hover{
+            opacity: 0.7;
+        }
+        #text-num{
+            display: flex;
+        }
+        #text-num.img{
+            flex: 2;
+            height: 400px;
+        }
+        .img img{
+            width: 100%;
+            height: 300px;
+            padding: 2px 20px;
+        }
+        .test1{
+            flex: 2;
+            height: 500px;
+        }
+        .test1 h2{
+            background-color: rgb(147, 247, 247);
+            color: black;
+            text-align: center;
+            font-size: 20px;
+            padding: 12px;
+        }
+        .test1 p{
+            background-color: rgba(70, 70, 124, 0.618);
+            padding: 5px 15px;
+            font-size: 20px;
+            height: 100px; 
+        }
+        .test1 img{
+            width:100% ;
+            height: 250px;
+        }
+        .test1 h4{
+            background-color: rgb(28, 160, 160);
+            color: brown;
+            text-align: center;
+            font-size: 20px;
+            padding: 8px;
+        }
+        .test1 .btn{
+            background-color: aquamarine;
+            color: blue;
+            cursor: pointer;
+            text-align: center;
+            border: none;
+            border-radius: 12px;
+            font-size: 30px;
+            padding: 12px;
+            float: right;
+        }
+        footer{
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            font-size: 30px;
+            padding: 12px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2>ABCODING</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">News</a></li>
+            </ul>
+        </nav>
+        <article>
+            <div class="test">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, esse quibusdam odit, unde veritatis quos beatae possimus cupiditate rerum aut numquam ipsum officia laboriosam excepturi provident autem. Minima, impedit quia.</p>
+                <img src="/img/breakfast1.jpg" alt="">
+            </div>
+            <div class="test">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, esse quibusdam odit, unde veritatis quos beatae possimus cupiditate rerum aut numquam ipsum officia laboriosam excepturi provident autem. Minima, impedit quia.</p>
+                <img src="/img/breakfast2.jpg" alt="">
+            </div>
+            <div class="test">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, esse quibusdam odit, unde veritatis quos beatae possimus cupiditate rerum aut numquam ipsum officia laboriosam excepturi provident autem. Minima, impedit quia.</p>
+                <img src="/img/dinner2.jpg" alt="">
+            </div> 
+            <div class="test">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, esse quibusdam odit, unde veritatis quos beatae possimus cupiditate rerum aut numquam ipsum officia laboriosam excepturi provident autem. Minima, impedit quia.</p>
+                <img src="/img/dinner2.jpg.jpg" alt="">
+            </div>
+        </article>
+        <div id="demo">
+            <div class="test">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur earum adipisci a optio voluptatibus quae fuga inventore corrupti, culpa quaerat, ducimus, eveniet debitis obcaecati at consectetur blanditiis consequuntur tempore!</p>
+            <img src="/img/breakfast1.jpg" alt="">
+        </div>
+        <div >
+            <div class="test">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur earum adipisci a optio voluptatibus quae fuga inventore corrupti, culpa quaerat, ducimus, eveniet debitis obcaecati at consectetur blanditiis consequuntur tempore!</p>
+            <img src="/img/breakfast2.jpg" alt="">
+        </div>
+        <div>
+            <div class="test">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur earum adipisci a optio voluptatibus quae fuga inventore corrupti, culpa quaerat, ducimus, eveniet debitis obcaecati at consectetur blanditiis consequuntur tempore!</p>
+            <img src="/img/breakfast3.jpg" alt="">
+        </div>
+        <div>
+            <div class="test">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur earum adipisci a optio voluptatibus quae fuga inventore corrupti, culpa quaerat, ducimus, eveniet debitis obcaecati at consectetur blanditiis consequuntur tempore!</p>
+            <img src="/img/dinner2.jpg" alt="">
+        </div>
+        </div>
+    </section>
+    <h2 class="center">Gallery</h2>
+    <div id="gallery">
+        <img src="/img/breakfast1.jpg" alt="">
+        <img src="/img/breakfast1.jpg" alt="">
+        <img src="/img/breakfast1.jpg" alt="">
+        <img src="/img/breakfast1.jpg" alt="">
+    </div>  
+    
+    <h2 class="center">About</h2>
+    <div id="text-num">
+        <div class="imgs">
+            <img src="/img/2.png" alt="">
+        </div>
+        <div class="test1">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius voluptatem et voluptates nam illum natus aliquid rerum itaque soluta quam. Illum, deleniti eum ab temporibus delectus aliquid odio exercitationem corrupti?</p>
+            <img src="/img/breakfast1.jpg" alt="">
+    
+            <h4>Lorem, ipsum dolor.</h4>
+            <button class="btn">click me!</button>
+        </div>
+    </div>
+    <footer>
+        <p>abcoding@gmail.com</p>
+    </footer>  
+</body>
+</html>

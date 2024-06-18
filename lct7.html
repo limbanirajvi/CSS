@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abcoding</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: cadetblue;
+        }
+        nav{
+            display: flex;
+        }
+        nav.logo{
+            display: flex;
+            align-items: center;
+        }
+        .logo img{
+            width: 150px;
+            padding: 5px 25px;
+
+        }
+        nav ul{
+            display: flex;
+            align-items: center;
+        }
+        nav ul li{
+            list-style: none;
+            padding: 8px 16px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color:rgb(197, 34, 88);
+            font-style:oblique;
+        }
+        nav ul li:hover{
+            background-color:#f4ecec;
+            border: none;
+            border-radius: 10px;
+        }
+        nav ul li a:hover{
+            color: blue;
+        }
+        .search{
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+        .search input{
+            width: 300px;
+            height: 20px;
+            border-radius: 5px;
+            border: none;
+            padding: 0 8px;
+        }
+        .btn{
+            background-color:rgb(35, 111, 177);
+            color: black;
+            font-style: oblique;
+            padding: 5px 10px;
+            border: none;
+            font-size: 13px;
+            margin: 0 50px 0 20px;
+        }
+        #imgs{
+            background-image: url(/img/pexels-anthony-📷📹🙂-132474.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 900px;
+
+        }
+        .center{
+            background-color: rgb(28, 162, 162);
+            text-align: center;
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+        #about{
+            display: flex;
+        }
+        #about ul{
+            list-style: none;
+            background-color: rgba(81, 134, 81, 0.73);
+            border-radius: 20px;
+            width: 30%;
+            height: 300px;
+        }
+        #about ul li{
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+        #about ul li a{
+            text-decoration: none;
+        }
+        #about ul li:hover{
+            background-color: rgb(199, 211, 222);
+        }
+        /* #about ul li u{
+            text-decoration: none;
+            color: blue;
+        } */
+        #about text{
+            padding: 0 12px;
+            height: 300px;
+        }
+        .text img{
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/img/1.png" alt="">
+            </div>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">CONTECT</a></li>
+                <li><a href="">GALLERY</a></li>
+                <li><a href="">NEWS</a></li>
+            </ul>
+            
+            <div class="search">
+                <input type="search" placeholder="search.....">
+                <button class="btn">submit</button>
+            </div>
+        </nav>
+    </header>
+    <div id="imgs">
+        <!-- <img src="/img/pexels-anthony-📷📹🙂-132474.jpg"> -->
+    </div>
+            <h2 class="center">ABOUT</h2>
+            <div id="about">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTECT</a></li>
+                    <li><a href="">GALLERY</a></li>
+                    <li><a href="">NEWS</a></li>
+                </ul>
+                <div class="text">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A unde delectus odit eligendi rerum illum error eaque sapiente quod eos vitae nesciunt, enim hic iusto odio non cumque mollitia provident!</P>
+                    <img src="/img/4.png">
+                </div>
+            </div>
+</body>
+</html>

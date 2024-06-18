@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abcoding</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: #cccccc;
+            padding: 20px;
+            border-radius: 10px;
+            width: 500px;
+            margin: auto;
+        }
+        input[type="text"],select, textarea{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px ;
+        }
+        label{
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+        input[type="submit"]{
+            background-color: rgb(13, 13, 13);
+            color: aliceblue;
+            border: none;
+            padding: 10px 12px;
+            cursor: pointer;
+            float:right;
+        }
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .col-25{
+            width: 25%;
+            float: left;
+            margin-top:5px ;
+        }
+        .col-75{
+            width: 75%;
+            /* float: left; */
+            margin-top: 5px;
+        }
+        @media screen and (max-width:500px) {
+
+            .col-25{
+                width: 100%;
+            }
+            .col-75{
+                width: 100%;
+            }
+            input[ type="submit" ]{
+                background-color: #cccccc;
+                color: aliceblue;
+                width: 100%;
+                padding: 12px 12px;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                float: right;
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+           <div class="row">
+            <div class="col-25">
+                <label a for="fname">first name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="fname" id="fname" placeholder="please enter your name">
+            </div>
+           </div> 
+
+           <div class="row">
+            <div class="col-25">
+                <label a for="lname">last name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="lname" id="lname" placeholder="please enter your name">
+            </div>
+           </div>
+
+            <div class="row">
+            <div class="col-25">
+                <label a for="email">email</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="email" id="email" placeholder="please enter your email">
+            </div>
+           </div> 
+           
+           <div class="row">
+            <div class="col-25">
+                <label a for="phone">phone</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="phone" id="phone" placeholder="please enter your phone">
+            </div>
+           </div> 
+
+           <div class="row">
+            <div class="col-25">
+                <label a for="city">city</label>
+            </div>
+            <div class="col-75">
+                <select name="city" id="city">
+                    <option value="gujarat">gujarat</option>
+                    <option value="rajkot">rajkot</option>
+                    <option value="amroli">amroli</option>
+                    <option value="bhavnager">bhavnager</option>
+                </select>
+            </div>
+           </div> 
+
+           <div class="row">
+            <div class="col-25">
+                <label for="sub">subject</label>
+            </div>
+            <div class="col-75">
+                <textarea name="subject" id="sub" placeholder="please enter your messegs" cols="30" row="10"></textarea>
+            </div>
+           </div>
+           <div class="row">
+            <input type="submit" value="submit">
+           </div>
+        </form>
+    </div>
+</body>
+</html>
